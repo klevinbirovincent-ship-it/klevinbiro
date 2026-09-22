@@ -4,21 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelvin Biro | Official Website & Portfolio</title>
-    <meta name="description" content="Official portfolio of Kelvin Biro (Chills Art) - Afrobeat artist, visual storyteller, and digital content creator.">
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Kelvin Biro",
-      "alternateName": "Chills Art",
-      "jobTitle": "Artist & Musician"
-    }
-    </script>
-
     <style>
-        /* Dark Theme & Base Styles */
         :root {
             --bg-color: #0b0c10;
             --card-bg: rgba(255, 255, 255, 0.04);
@@ -31,7 +17,7 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
             padding: 20px;
             display: flex;
@@ -46,6 +32,7 @@
         .profile-header {
             margin-top: 20px;
             margin-bottom: 30px;
+            text-align: left;
         }
 
         .profile-img {
@@ -54,6 +41,8 @@
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid var(--border-color);
+            background-color: #1a1c29;
+            display: block;
         }
 
         h1 {
@@ -131,6 +120,33 @@
             font-size: 0.85rem;
             border: 1px solid var(--border-color);
         }
+
+        /* Form Styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
@@ -139,7 +155,12 @@
 
     <!-- Profile Header -->
     <div class="profile-header">
-        <img src="headshot.jpg" alt="Kelvin Biro" class="profile-img" onerror="this.src='https://via.placeholder.com/120';">
+        <img src="Klkelvin.jpg" alt="Kelvin Biro" class="profile-img" onerror="
+            if (this.src.includes('Klkelvin.jpg')) { this.src = 'klkelvin.jpg'; }
+            else if (this.src.includes('klkelvin.jpg')) { this.src = 'Kelvin.jpg'; }
+            else if (this.src.includes('Kelvin.jpg')) { this.src = 'kelvin.jpg'; }
+            else if (this.src.includes('kelvin.jpg')) { this.src = 'me.jpg'; }
+        ">
         <h1>Kelvin Biro</h1>
         <div class="subtitle">Music Artist • Visual Storyteller (@sadmind35)</div>
         <a href="#discography" class="cta-btn">Listen Now</a>
@@ -148,15 +169,19 @@
     <!-- About Section -->
     <section id="about">
         <h2 class="section-title">About Kelvin Biro</h2>
-        <p style="line-height: 1.6; font-size: 0.95rem;">
+        <p style="line-height: 1.6; font-size: 0.95rem; margin-bottom: 15px;">
             <strong>Kelvin Biro</strong> is a public figure, Afrobeats artist, visual storyteller, and digital content creator (@sadmind35). Renowned for his compelling blend of modern music production, high-concept visual aesthetics, and classical art breakdowns, he stands as a dynamic cultural voice bridging sound and visual media.
+        </p>
+        <p style="line-height: 1.6; font-size: 0.90rem; color: var(--text-muted);">
+            Stream his latest discography—including the standout single <strong>FINE GIRL</strong>—or reach out via the contact form for media appearances, brand partnerships, and executive collaborations.
         </p>
 
         <div class="social-links">
             <a href="https://soundcloud.com" target="_blank">SoundCloud</a> •
             <a href="https://audiomack.com/sadmind-35" target="_blank">Audiomack</a> •
             <a href="https://tiktok.com/@sadmind35" target="_blank">TikTok</a> •
-            <a href="https://snapchat.com/add/sadmind2023" target="_blank">Snapchat</a>
+            <a href="https://snapchat.com/add/sadmind2023" target="_blank">Snapchat</a> •
+            <a href="https://youtube.com" target="_blank">YouTube</a>
         </div>
     </section>
 
@@ -206,7 +231,29 @@
         </div>
     </section>
 
-    <!-- Press Kit & Direct WhatsApp Booking -->
+    <!-- Booking & Management Form (Formspree) -->
+    <section id="booking-form" style="margin-top: 40px;">
+        <h2 class="section-title">Booking & Management</h2>
+        <div class="card">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Press & Bookings WhatsApp Section -->
     <section id="contact" style="margin-top: 40px; margin-bottom: 50px;">
         <h2 class="section-title">Press & Bookings</h2>
         <p style="color: var(--text-muted); margin-bottom: 25px;">
