@@ -249,4 +249,47 @@
     </footer>
 
 </body>
-</html>
+</html><!-- Press Kit & Official Bookings Section -->
+<section id="contact" style="margin-top: 50px;">
+    <h2 class="section-title">Press & Bookings</h2>
+    <p style="color: var(--text-muted); margin-bottom: 30px;">
+        For press inquiries, brand partnerships, media appearances, or live performance bookings, reach out directly below or use the official contact form.
+    </p>
+
+    <!-- Business Inquiry Info Cards -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 35px;">
+        <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 20px; border-radius: 10px;">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Management & Bookings</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0;">Direct inquiries regarding music distribution, features, and live performance bookings.</p>
+        </div>
+        <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 20px; border-radius: 10px;">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Media & Press Kit</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0;">High-resolution promotional images, official artist biography, and brand asset guidelines.</p>
+        </div>
+    </div>
+
+    <!-- Official Contact Form -->
+    <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; border-radius: 12px;">
+        <h3 style="margin-top: 0; margin-bottom: 20px;">Send a Message</h3>
+        <form action="https://formspree.io/f/xbldqyvq" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+            <div>
+                <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px;">Your Name / Organization</label>
+                <input type="text" name="name" required style="width: 100%; padding: 12px; background: rgba(0,0,0,0.5); border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff; box-sizing: border-box;">
+            </div>
+            <div>
+                <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px;">Your Email Address</label>
+                <input type="email" name="_replyto" required style="width: 100%; padding: 12px; background: rgba(0,0,0,0.5); border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff; box-sizing: border-box;">
+            </div>
+            <div>
+                <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px;">Subject / Reason for Inquiry</label>
+                <input type="text" name="subject" required style="width: 100%; padding: 12px; background: rgba(0,0,0,0.5); border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff; box-sizing: border-box;">
+            </div>
+            <div>
+                <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px;">Message</label>
+                <textarea name="message" rows="5" required style="width: 100%; padding: 12px; background: rgba(0,0,0,0.5); border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff; box-sizing: border-box; resize: vertical;"></textarea>
+            </div>
+            <button type="submit" class="cta-btn" style="border: none; cursor: pointer; align-self: flex-start; margin-top: 10px;">Send Message</button>
+        </form>
+    </div>
+</section>
+
