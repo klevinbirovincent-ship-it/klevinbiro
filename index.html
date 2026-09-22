@@ -141,6 +141,7 @@
             border-radius: 6px;
             color: #fff;
             font-size: 0.9rem;
+            box-sizing: border-box;
         }
 
         .form-group textarea {
@@ -231,11 +232,11 @@
         </div>
     </section>
 
-    <!-- Booking & Management Form (Formspree) -->
-    <section id="booking-form" style="margin-top: 40px;">
+    <!-- Booking & Management Form (Formspree Connected) -->
+    <section id="booking-management" style="margin-top: 40px;">
         <h2 class="section-title">Booking & Management</h2>
         <div class="card">
-            <form action="https://formspree.io/f/your-form-id" method="POST">
+            <form action="https://formspree.io/f/mbgjlndg" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -253,17 +254,30 @@
         </div>
     </section>
 
-    <!-- Press & Bookings WhatsApp Section -->
+    <!-- Press & Bookings Section -->
     <section id="contact" style="margin-top: 40px; margin-bottom: 50px;">
         <h2 class="section-title">Press & Bookings</h2>
         <p style="color: var(--text-muted); margin-bottom: 25px;">
-            For press inquiries, brand partnerships, media appearances, or live performance bookings, reach out directly on WhatsApp.
+            For press inquiries, brand partnerships, media appearances, or live performance bookings, reach out directly through the options below.
         </p>
 
-        <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 30px; border-radius: 12px; text-align: center;">
+        <!-- Management & Bookings Info Card -->
+        <div class="card">
+            <h3 style="margin-top: 0; font-size: 1.05rem;">Management & Bookings</h3>
+            <p style="margin-bottom: 0;">Direct inquiries regarding major bookings, festival slots, and brand licensing.</p>
+        </div>
+
+        <!-- Media & Press Kit Card -->
+        <div class="card">
+            <h3 style="margin-top: 0; font-size: 1.05rem;">Media & Press Kit</h3>
+            <p style="margin-bottom: 0;">High-resolution promotional images, official biography, and press assets available.</p>
+        </div>
+
+        <!-- WhatsApp Direct Card -->
+        <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 30px; border-radius: 12px; text-align: center; margin-top: 15px;">
             <h3 style="margin-top: 0; font-size: 1.2rem;">Get in Touch Directly</h3>
             <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
-                Click below to start a direct WhatsApp chat for bookings, features, or project inquiries.
+                Click below to start a direct WhatsApp chat for quick responses, urgent features, or project inquiries.
             </p>
 
             <a href="https://wa.me/2347042520710?text=Hello%20Kelvin,%20I'm%20reaching%20out%20regarding%20a%20booking/inquiry." 
