@@ -298,32 +298,28 @@
         </section>
 
         <section id="contact">
-            <h2 class="section-title">Booking & Management</h2>
-            <form class="contact-form" action="https://formspree.io/f/mbgjlndg" method="POST">
+    <h2 class="section-title">Booking &amp; Management</h2>
+    <form class="contact-form" action="https://formspree.io/f/mbgjlndg" method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name or Organization">
+        </div>
 
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required placeholder="Your Name or Organization">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required placeholder="name@example.com">
-                </div>
-                <div class="form-group full-width">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" required placeholder="Booking, Collaboration, or Press Inquiry">
-                </div>
-                <div class="form-group full-width">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" required placeholder="Detail your project or inquiry..."></textarea>
-                </div>
-                <div class="form-group full-width">
-                    <button type="submit" class="cta-btn" style="border: none; cursor: pointer;">Send Inquiry</button>
-                </div>
-            </form>
-        </section>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="name@example.com">
+        </div>
 
-    </div>
+        <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Project details or booking inquiries..."></textarea>
+        </div>
+
+        <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+</section>
+
+  </div>
 
     <footer>
         <div class="social-links" style="margin-bottom: 15px;">
