@@ -1,4 +1,4 @@
-# Klevin Biro (@sadmind35)
+# Kelvin Biro (@sadmind35)
 
 Official hub and discography website for Klevin Biro — artist, music, visual edits, and classical art history.
 
